@@ -38,6 +38,19 @@
                             {{ __('Profile') }}
                         </x-dropdown-link>
 
+                        <x-dropdown-link :href="route('change.lang', ['lang' => 'en'])">
+                            English
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('change.lang', ['lang' => 'es'])">
+                            Spanish
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('change.lang', ['lang' => 'fr'])">
+                            French
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('change.lang', ['lang' => 'it'])">
+                            Italian
+                        </x-dropdown-link>
+
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf

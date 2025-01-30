@@ -16,7 +16,7 @@ class LanguageController extends Controller
     {
         $lang = $request->lang;
 
-        if (!in_array($lang, ['en', 'it', 'fr'])) {
+        if (!in_array($lang, ['en', 'es', 'it', 'fr'])) {
             abort(400);
         }
 
